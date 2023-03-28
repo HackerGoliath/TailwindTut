@@ -10,19 +10,32 @@
     @apply text-yellow-600 bg-slate-400;
 } */
 
-.btn {
+/* .btn {
     @apply mx-2 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-}
-.btn-g-l{
+} */
+/* .btn-g-l{
     @apply text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2
 }
 .btn-g-p{
     @apply text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2
-}
+} */
 
+.componentsafter{
+    text-align: center;
+}
 
 @tailwind utilities;
 /* Overrides tailwind utility classes(so bg given to element in html page does not applies) */
-.text-vic{
+/* .text-vic{
     @apply text-yellow-600 bg-slate-400;
+} */
+
+/* Layer directive puts the class in given layer */
+/* if the class is in components layer you can change at html page */
+@layer components{
+/* but if the class is in utilities layer it can not be changeable at run time */
+/* @layer utilities{ */
+.btn {
+    @apply mx-2 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+}
 }
