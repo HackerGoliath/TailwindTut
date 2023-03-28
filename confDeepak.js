@@ -1,3 +1,4 @@
+// command: npx tailwindcss init confDeepak --full
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
